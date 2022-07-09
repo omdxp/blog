@@ -4,22 +4,9 @@
 <link rel="stylesheet" href="/app.css" />
 
 <body>
-    <article>
-        <h1><a href="/posts/my-first-post">My First Post</a></h1>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repudiandae dolor perspiciatis explicabo eveniet minus. Incidunt velit, labore vitae iure asperiores tenetur architecto tempore expedita in assumenda dolor ad harum.</p>
-    </article>
-
-    <article>
-        <h1><a href="/posts/my-second-post">My Second Post</a></h1>
-
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repudiandae dolor perspiciatis explicabo eveniet minus. Incidunt velit, labore vitae iure asperiores tenetur architecto tempore expedita in assumenda dolor ad harum.</p>
-    </article>
-
-    <article>
-        <h1><a href="/posts/my-third-post">My Third Post</a></h1>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repudiandae dolor perspiciatis explicabo eveniet minus. Incidunt velit, labore vitae iure asperiores tenetur architecto tempore expedita in assumenda dolor ad harum.</p>
-    </article>
+    <?php foreach ($posts as $post): ?>
+        <article>
+            <?= $post; ?>
+        </article>
+    <?php endforeach; ?>
 </body>
